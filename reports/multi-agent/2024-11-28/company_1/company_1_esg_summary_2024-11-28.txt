@@ -1,0 +1,14 @@
+Salesforce demonstrates a strong commitment to Environmental, Social, and Governance (ESG) principles across its operations. 
+
+**Environmental Performance:** While the provided text focuses primarily on social aspects of ESG, Salesforce's dedication to sustainable practices is evident in their integration of ESG goals into executive compensation plans. This indicates a prioritization of environmental responsibility at the highest levels.  
+
+**Social Impact:** Salesforce highlights diversity and inclusion as key priorities. They track representation of underrepresented groups (URGs) and Underrepresented Minorities (URMs) across different levels, including leadership positions. The company also emphasizes employee well-being through training programs, professional development opportunities, and work-life balance initiatives.
+
+**Governance Practices:** Salesforce boasts robust governance structures with independent board members overseeing key committees. Their commitment to ethical conduct is evident in a dedicated Privacy, Cybersecurity & Ethical Use Committee, a comprehensive Code of Conduct, and a strong Compliance team. Transparency is further emphasized through adherence to evolving regulations like the SEC's climate disclosure requirements and the EU's CSRD.
+
+**ESG Score:**
+* Environmental: 6/10 (Limited information provided but commitment to ESG integration in compensation suggests positive focus.)
+* Social: 8/10 (Strong emphasis on diversity, inclusion, and employee well-being with clear metrics and initiatives.)
+* Governance: 9/10 (Robust governance structures, ethical guidelines, and commitment to transparency demonstrate strong leadership.)
+
+**Total: 7.7/10**

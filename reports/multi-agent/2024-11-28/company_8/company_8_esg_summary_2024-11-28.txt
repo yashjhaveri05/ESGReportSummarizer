@@ -1,0 +1,9 @@
+##  Adobe: A Snapshot of ESG Performance
+
+Adobe demonstrates a commitment to environmental sustainability through its focus on renewable energy adoption, aiming for 100% renewable electricity by 2025. They are also proactively addressing the environmental impact of AI by optimizing code and scheduling strategies. Their social initiatives prioritize democratizing access to creative tools and fostering diversity within their workforce and community.  However, specific data points on diversity representation and the impact of social programs are lacking, limiting a comprehensive assessment. While the governance section is missing for analysis, Adobe's overall approach suggests a proactive stance towards addressing ESG challenges.
+
+**ESG Score:**
+Environmental: 6/10
+Social: 5/10
+Governance: Incomplete (missing data)
+Total: 5.5/10

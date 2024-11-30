@@ -1,0 +1,25 @@
+## NVIDIA Sustainability Summary and ESG Score
+
+**Summary:**
+
+NVIDIA's sustainability report highlights their commitment to innovation and addressing environmental and social impacts. They demonstrate this through:
+
+* **Innovation-driven approach**:  Focusing on technological advancements like GPUs and software stacks for AI applications in various industries, including autonomous driving and healthcare.
+* **Emphasis on diversity and inclusion**: Mentioning a strong commitment to these values, though specific details are lacking.
+* **Developing a comprehensive sustainability framework**: Planning a double-materiality assessment to identify and address key sustainability issues based on both financial and impact considerations.
+
+**Areas for improvement:**
+
+* **Limited quantitative data**: While they outline their approach and commitments, the report lacks concrete data on environmental performance, such as greenhouse gas emissions and energy consumption.
+* **Lack of specific social impact metrics**:  While mentioning a strong framework for social initiatives, the report would benefit from outlining measurable outcomes and targets related to diversity, inclusion, and community engagement.
+
+
+**ESG Score:**
+
+**Environmental: 5/10** - Demonstrates awareness of environmental impacts but lacks concrete data on performance metrics like energy efficiency and emissions reduction.  
+**Social: 6/10** - Strong commitment to diversity and inclusion is stated, but further details on initiatives, targets, and measurable outcomes are needed.
+**Governance: 8/10** - Robust governance structure evident through the Nominating and Corporate Governance Committee's involvement in sustainability strategy. Clear integration of ESG considerations into decision-making is highlighted.
+
+**Total: 6.3/10** 
+
+NVIDIA shows promise with its focus on innovation and developing a comprehensive sustainability framework. However, providing more quantifiable data on environmental performance and outlining specific social impact goals would strengthen their ESG standing.

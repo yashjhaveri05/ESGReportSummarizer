@@ -1,0 +1,16 @@
+## NVIDIA: A Snapshot of ESG Performance
+
+NVIDIA, a leading technology company specializing in graphics processing units (GPUs) and software platforms, demonstrates a commitment to integrating environmental, social, and governance considerations into its operations.  They leverage their innovative technologies to revolutionize diverse industries while actively pursuing sustainability initiatives. 
+
+**Environmentally**, NVIDIA focuses on minimizing the environmental footprint of their products and operations through R&D investments in energy-efficient hardware like the data processing unit (DPU). They report annually on their progress according to their fiscal calendar.  
+
+**Socially**, NVIDIA has initiated a formalized materiality assessment process to identify key sustainability issues impacting both the company and its stakeholders. While they highlight adherence to established frameworks like GRI, SASB, TCFD, and the UN SDGs, further data is needed on labor practices, diversity & inclusion efforts, and community engagement initiatives for a comprehensive social impact assessment.
+
+**Governance** information is required for a complete analysis. Please provide the relevant section from NVIDIA's ESG report.
+
+**(Score pending Governance Summary)** 
+Environmental: **6/10** - Strong commitment to innovation and reporting but lacks specific data on environmental impact reduction.
+
+Social: **5/10** -  Commendable framework adherence and materiality assessment process, but needs more transparency on social performance data.
+
+Governance: **Pending**
