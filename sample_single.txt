@@ -1,0 +1,22 @@
+## Salesforce ESG Summary & Score
+
+**Summary:**
+
+Salesforce presents a strong commitment to ESG principles, demonstrating this through robust governance structures and the integration of ESG goals into executive compensation. They highlight diversity and inclusion efforts, ethical business practices, and a focus on employee well-being. However, the report lacks specific quantitative data on environmental impact and social initiatives, limiting a full assessment.
+
+**ESG Score:**
+
+* **Environmental: 6/10** - Limited data available but demonstrates commitment to diversity and inclusion
+* **Social: 7/10** - Strong framework for social initiatives, emphasis on measurable outcomes needed.  The report mentions programs but doesn't quantify impact.  More detailed information on employee demographics, diversity targets, and community engagement outcomes would strengthen this score.
+* **Governance: 8/10** - Robust governance structure with independent board members, dedicated committees overseeing ESG, and a clear Code of Conduct. The inclusion of ESG goals in executive compensation is commendable.
+
+**Total: 7/10** 
+
+**Recommendations:**
+
+To further enhance their ESG performance and reporting transparency, Salesforce should consider:
+
+
+* **Quantifying environmental impact:**  Disclose data on carbon emissions, energy consumption, waste reduction efforts, and sustainable supply chain practices.
+* **Setting measurable social impact goals:** Define clear targets for diversity representation, employee engagement, community investment, and ethical sourcing. Regularly report progress towards these goals.
+* **Publishing a standalone ESG report:**  A dedicated report would allow for more in-depth analysis of their ESG strategy, performance metrics, and future commitments.

@@ -27,7 +27,7 @@ def call_ollama(prompt):
         print(f"Ollama API call failed: {e}")
         return None
 
-def analyze_esg_data(company_data: dict) -> str:
+def analyze_esg_data(company_data):
     """Analyze the company's ESG data and provide a summary with scores."""
     ESG_PROMPT = f"""
     You are an expert in financial analysis and ESG report analysis. You have been provided with the company's Environmental, Social, and Governance (ESG) data. Your task is to:
@@ -41,13 +41,13 @@ def analyze_esg_data(company_data: dict) -> str:
     The company's ESG data is as follows:
 
     **Environmental Data:**
-    {company_data["e"]}
+    {company_data["E"]}
 
     **Social Data:**
-    {company_data["s"]}
+    {company_data["S"]}
 
     **Governance Data:**
-    {company_data["g"]}
+    {company_data["G"]}
 
     Please provide the summary and the ESG score accordingly.
     Example of how the ESG Score should look:
@@ -71,17 +71,14 @@ def esg_analysis(company_data):
 
 # Example usage
 if __name__ == "__main__":
-    with open('data.json', 'r') as file:
+    with open('sample_nvidia_data.json', 'r') as file:
         esg_data = json.load(file)
-
-    for company, data in esg_data.items():
-        print(f"ESG Report for {company}:")
-        report = esg_analysis(data)
-        today_date = datetime.now().strftime("%Y-%m-%d")
-        file_name = f"{company}_esg_summary_{today_date}.txt"
-        folder_path = f"./reports/single-agent/{today_date}/{company}"
-        os.makedirs(folder_path, exist_ok=True)
-        file_path = os.path.join(folder_path, file_name)
-        with open(file_path, "w") as file:
-            file.write(report)
-        print(f"Report saved to {file_path}")
+    report = esg_analysis(esg_data)
+    today_date = datetime.now().strftime("%Y-%m-%d")
+    file_name = f"company5_esg_summary_{today_date}.txt"
+    folder_path = f"./reports/multi-agent/{today_date}/company5"
+    os.makedirs(folder_path, exist_ok=True)
+    file_path = os.path.join(folder_path, file_name)
+    with open(file_path, "w") as file:
+        file.write(report)
+    print(f"Report saved to {file_path}")

@@ -28,9 +28,8 @@ def call_ollama(prompt):
         return None
 
 # Define tools for environmental, social, and governance analyses
-def analyze_environmental_data(e_data: str) -> str:
+def analyze_environmental_data(e_data):
     """Analyze the environmental aspect of the company's ESG data."""
-    # prompt = f"Analyze the following environmental data: {e_data}"
     ENV_PROMPT = f"""
         You are an expert in environmental sustainability and analysis. You have been provided with an ESG report, focusing on the Environmental section, along with relevant environmental data from the company. Your task is to:
         1. Analyze the Text and Data: Carefully review the Environmental section and the E data to understand the company's environmental impacts and the solutions they propose.
@@ -42,9 +41,8 @@ def analyze_environmental_data(e_data: str) -> str:
     """
     return call_ollama(ENV_PROMPT)
 
-def analyze_social_data(s_data: str) -> str:
+def analyze_social_data(s_data):
     """Analyze the social aspect of the company's ESG data."""
-    # prompt = f"Analyze the following social data: {s_data}"
     SOC_PROMPT = f"""
         You are an expert in social sustainability and analysis. You have been provided with an ESG report, focusing on the Social section, along with relevant social data from the company. Your task is to:
         1. Analyze the Text and Data: Carefully review the Social section and the S data to understand the company's social impacts and the solutions they propose.
@@ -56,9 +54,8 @@ def analyze_social_data(s_data: str) -> str:
     """
     return call_ollama(SOC_PROMPT)
 
-def analyze_governance_data(g_data: str) -> str:
+def analyze_governance_data(g_data):
     """Analyze the governance aspect of the company's ESG data."""
-    # prompt = f"Analyze the following governance data: {g_data}"
     GOV_PROMPT = f"""
         You are an expert in corporate governance and analysis. You have been provided with an ESG report, focusing on the Governance section, along with relevant governance data from the company. Your task is to:
         1. Analyze the Text and Data: Carefully review the Governance section and the G data to understand the company's governance practices and the solutions they propose.
@@ -72,12 +69,6 @@ def analyze_governance_data(g_data: str) -> str:
 
 # Summarizer function to combine all analyses
 def summarize_esg(environmental_summary, social_summary, governance_summary):
-    # prompt = (
-    #     f"Combine the following analyses into a final ESG summary:\n"
-    #     f"Environmental: {environmental_summary}\n"
-    #     f"Social: {social_summary}\n"
-    #     f"Governance: {governance_summary}"
-    # )
     SUMMARY_PROMPT = f"""
         You are an expert in financial analysis and ESG report analysis. You have been provided with separate summaries of the company's Environmental, Social, and Governance (ESG) performance, each approximately 200 words. Your task is to:
         1. **Create a Unified Summary:** Combine the three summaries into a cohesive overview that describes and provides an overview of the company's overall ESG performance.
@@ -97,12 +88,12 @@ def esg_analysis(company_data):
     # Step 1: Analyze individual ESG components
     start = time.time()
     print(1)
-    environmental_summary = analyze_environmental_data(company_data["e"])
+    environmental_summary = analyze_environmental_data(company_data["E"])
     print(2)
     e = time.time()
-    social_summary = analyze_social_data(company_data["s"])
+    social_summary = analyze_social_data(company_data["S"])
     s = time.time()
-    governance_summary = analyze_governance_data(company_data["g"])
+    governance_summary = analyze_governance_data(company_data["G"])
     g = time.time()
     mid = time.time()
     # Step 2: Summarize all analyses
@@ -118,32 +109,18 @@ def esg_analysis(company_data):
     print(f"Governance time taken: {g_time:.2f} seconds")
     print(f"Total ESG Agent time taken: {mid_time:.2f} seconds")
     print(f"Total time taken by all 4 agents: {total_time:.2f} seconds")
-    # print("Environmental Summary", environmental_summary)
-    # print("Social Summary", social_summary)
-    # print("Governance Summary", governance_summary)
-    # print("Final Summary", final_summary)
     return final_summary
 
 # Example usage
 if __name__ == "__main__":
-    # esg_data = {
-    #     "company_1": {
-    #         "e": "The company reduced carbon emissions by 20% and improved renewable energy use.",
-    #         "s": "The company achieved a diversity score of 85 and conducted extensive community outreach.",
-    #         "g": "The company maintained 75% board independence and adhered to all audit compliance standards.",
-    #     }
-    # }
-    with open('data.json', 'r') as file:
+    with open('sample_nvidia_data.json', 'r') as file:
         esg_data = json.load(file)
-
-    for company, data in esg_data.items():
-        print(f"ESG Report for {company}:")
-        report = esg_analysis(data)
-        today_date = datetime.now().strftime("%Y-%m-%d")
-        file_name = f"{company}_esg_summary_{today_date}.txt"
-        folder_path = f"./reports/multi-agent/{today_date}/{company}"
-        os.makedirs(folder_path, exist_ok=True)
-        file_path = os.path.join(folder_path, file_name)
-        with open(file_path, "w") as file:
-            file.write(report)
-        print(f"Report saved to {file_path}")
+    report = esg_analysis(esg_data)
+    today_date = datetime.now().strftime("%Y-%m-%d")
+    file_name = f"company5_esg_summary_{today_date}.txt"
+    folder_path = f"./reports/multi-agent/{today_date}/company5"
+    os.makedirs(folder_path, exist_ok=True)
+    file_path = os.path.join(folder_path, file_name)
+    with open(file_path, "w") as file:
+        file.write(report)
+    print(f"Report saved to {file_path}")
